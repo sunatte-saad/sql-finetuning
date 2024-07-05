@@ -1,16 +1,42 @@
-# sql-finetuning
-Code for finetuning a language model to output SQL querries with inputs in the natural language
 
-Open the sql-finetuning.ipynb and run it on google colab and change your run time to GPU. 
+# SQL-Finetuning
 
-If you are running the ipynb locally, then you need to create a virtual env using CLI
+Code for fine-tuning a language model to output SQL queries from natural language inputs.
 
-python3 -m venv venv
+## Instructions
 
-source venv/bin/activate
+### Running on Google Colab
 
-you would not need the env on google colab.
+1. Open `sql-finetuning.ipynb`.
+2. Change your runtime to GPU.
+3. Run the notebook.
 
-make sure you have a GPU if you are runnning locally, because it will take a long time on GPU
+### Running Locally
 
-Download the trained weights for inference if you dont want to train it
+If you prefer to run the notebook locally, follow these steps to set up a virtual environment:
+
+1. Create a virtual environment:
+   ```bash
+   python3 -m venv venv
+   ```
+
+2. Activate the virtual environment:
+   ```bash
+   # On macOS and Linux
+   source venv/bin/activate
+
+   # On Windows
+   .\venv\Scripts\activate
+   ```
+
+**Note**: You do not need a virtual environment on Google Colab.
+
+### Hardware Requirements
+
+Ensure you have access to a GPU, as training will take a long time without one.
+
+## Pre-trained Weights
+
+If you don't want to train the model yourself, you can download the pre-trained weights for inference:
+
+[Download Pre-trained Weights](https://drive.google.com/file/d/1KhS2AxLuTfrcb0CzHEzDpAVZWXAto6OM/view?usp=sharing)
